@@ -41,7 +41,7 @@ class Kejadian extends Pengadu implements PengaduanInterface //inheritance turun
             lokasi = '{$data['lokasi']}',
             tanggal = '{$data['tanggal']}',
             harapan = '{$data['harapan']}',
-            file_pendukung = '{$data['file_pendukung']}'";
+            file_pendukung = '{$data['file_pendukung']}'"; //ashasah
 
         mysqli_query($this->conn, $query);
     }
