@@ -55,6 +55,35 @@ class PengaduanHandler
         echo "<script>alert('Berhasil Membuat Pengaduan')</script>";
     }
 }
+class Laporan implements PengaduanInterface // kelas baru yang merupakan fitur dari aplikasi
+{
+    protected $conn;
+
+    public function __construct($conn)
+    {
+        $this->conn = $conn;
+    }
+
+    public function insertData($data)
+    {
+        $query = "INSERT INTO laporan SET
+            keterangan = '{$data['keterangan']}',
+            lampiran = '{$data['lampiran']}',
+            tanggal_laporan = '{$data['tanggal_laporan']}'";
+
+        mysqli_query($this->conn, $query);
+    }
+}
+
+class LaporanHandler //kelas baru yang menangani kelas pembuatan laporan dan mengambil dua parameter yaitu $laporan dan $data
+{
+    public function createLaporan(PengaduanInterface $laporanObj, $data)
+    {
+        $laporanObj->insertData($data);
+        echo "<script>alert('Berhasil Membuat Laporan')</script>";
+    }
+}
+
 
 if (isset($_POST['buat'])) {
     $pengaduanHandler = new PengaduanHandler(); //objek

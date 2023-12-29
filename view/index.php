@@ -87,7 +87,8 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div class="col-md-6">
                   <div class="detail-box">
-                    <h1>
+                    <h1>selamat ujian<br>
+                    <br>
                       Definisi Hak Asasi Manusia (HAM)
                     </h1>
                     <p>
