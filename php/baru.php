@@ -29,18 +29,3 @@ class Pengguna
 ////
 // Membuat objek untuk Pengguna
 $pengguna = new Pengguna($conn);
-
-// Membuat objek untuk Pengadu
-$pengadu = new Pengadu($conn);
-$pengguna->createPengaduan($pengadu, $pengaduData);
-
-// Membuat objek untuk Kejadian
-$kejadian = new Kejadian($conn);
-$pengguna->createKejadian($kejadian, $kejadianData);
-
-// Membuat objek untuk Laporan
-$laporan = new Laporan($conn);
-$pengguna->createLaporan($laporan, $laporanData);
-
-
-?>
