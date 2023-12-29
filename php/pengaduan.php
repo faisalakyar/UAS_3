@@ -3,7 +3,7 @@ include 'config.php';
 
 interface PengaduanInterface
 { //
-    public function insertData($data); //interfacenyaa polimorphism untuk mendefinisikan satu atau lebih metode 
+    public function insertData($data); //interfacenyaa polimorphism untuk mendefinisikan satu atau lebih metodee
 }
 
 class Pengadu implements PengaduanInterface
