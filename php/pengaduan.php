@@ -8,7 +8,7 @@ interface PengaduanInterface
 
 class Pengadu implements PengaduanInterface
 { //ada konsep oop Claass (kelas induk)
-    protected $conn; //encapsulasi karena hanya dapat diakses oleh kelas induk dan juga kelas turunan(terbungkus)
+    protected $conn; //encapsulasi karena hanya dapat diakses oleh kelas induk dan juga kelas turunan(terbungkus))
 
     public function __construct($conn)
     {
